@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>university Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="index.js" ></script>
+    <script src="https://kit.fontawesome.com/157217e0e9.js" crossorigin="anonymous"></script>
+
+    </script>
+  </head>
+  <body>
+    <section class="header">
+      <nav class="navbar">
+        <!-- <a href="./index.html" 
+           ><img src="./eduford_img/logo.png" alt="university logo" 
+        /></a> -->
+        <div class="nav-links" id="navLinks">
+          <i class="fa-solid fa-square-xmark" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="my-fres.html">My Friends</a></li>
+            <!-- <li><a href="index.html">Course</a></li>
+            <li><a href="index.html">Blog</a></li> -->
+            <li><a href="index.html">contact</a></li>
+          </ul>
+        </div>
+        <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+      </nav>
+
+      <div class="header-text">
+        <h1>Bincom Dev Center</h1>
+        <p>
+          learning programming is now one of the easiest things in Lagos. You just
+          need to visit<br />
+          Bincom Dev center, Yaba Lagoes and you are good to go.
+        </p>
+        <a href="https://blog.bincom.net" class="header-btn">Visit us to know more</a>
+      </div>
+    
+    </section>
+    <div><h1 class="frens-p" >My Friends</h1></div>
+      <div class="gallery" >
+        
+        <div class="image-cont" id="container1" >
+          <a href="#image1"><img src="pics/gen-1.jpg" class="fren-pics" /></a>
+          <p class="image-desc" >Lorem ipsum dolor</p>
+        </div>
+         <div class="image-cont" id="container2" >
+          <a href="#image1"><img src="pics/kizito-4.jpg" class="fren-pics"  /></a>
+          <p class="image-desc" >Lorem ipsum dolor. </p>
+        </div>
+        <div class="image-cont" id="container2" >
+          <a href="#image1"><img src="pics/nono-3.jpg" class="fren-pics"  /></a>
+          <p class="image-desc" >Lorem ipsum dolor. </p>
+        </div>
+        <div class="image-cont" id="container2" >
+          <a href="#image1"><img src="pics/don-2.jpg" class="fren-pics"  /></a>
+          <p class="image-desc" >Lorem ipsum dolor. </p>
+        </div>
+      </div>
+    </div>
+    <footer  class="footer">
+      copy right &copy; Genesis
+    </footer>
+    <script>
+       let navLink = document.getElementById('navLinks');
+      function showMenu() {
+        navLink.style.display = 'block';
+      }
+      function hideMenu() {
+        navLink.style.display = 'none';
+      }
+    </script>
+  </body>
+</html>
